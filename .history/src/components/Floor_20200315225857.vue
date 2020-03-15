@@ -49,7 +49,9 @@ export default {
       rooms: [],
       id: 0,
       error: null,
-      remove: remove
+      existing: [],
+      remove: remove,
+      test: []
     };
   },
   methods: {

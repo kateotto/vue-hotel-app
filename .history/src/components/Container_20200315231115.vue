@@ -219,10 +219,7 @@ label {
   border: none;
   background-color: transparent;
   cursor: pointer;
-}
-
-.pen-button:focus {
-    outline: 1px solid #7bad9a;
+  outline-color: #7bad9a;
 }
 
 .pen-button img {
@@ -238,7 +235,8 @@ label {
   font-weight: bold;
   cursor: pointer;
   margin: 5px 0;
-  outline: transparent;
+  outline-color: #7bad9a;
+  outline-offset: 30px;
 }
 
 .add-button::after {
@@ -248,11 +246,7 @@ label {
   color: #fff;
   border-radius: 20px;
   cursor: pointer;
-}
 
-.add-button:focus{
-  outline: 1px solid #77bbaa;
-  outline-offset: 10px;
 }
 
 .error {

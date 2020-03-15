@@ -49,7 +49,9 @@ export default {
       rooms: [],
       id: 0,
       error: null,
-      remove: remove
+      existing: [],
+      remove: remove,
+      test: []
     };
   },
   methods: {
@@ -73,7 +75,7 @@ export default {
         tagsArr = [...tagsArr];
         let roomsArr = [];
         roomsArr = this.rooms.map(e => e.r.toString());
-        tagsArr = tagsArr.filter(tag => !roomsArr.includes(tag));
+        tagsArr = tagsArr.filter(val => !roomsArr.includes(val));
         if (!tagsArr.length) {
           this.error = "Takie pokoje już istnieją!";
         } else {
