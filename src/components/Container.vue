@@ -102,6 +102,9 @@ export default {
     },
     isFormValid: function() {
       this.error = null;
+      this.floorNr = parseInt(this.floorNr);
+      this.startNr = parseInt(this.startNr);
+      this.endNr = parseInt(this.endNr);
       if (!this.floorNr || !this.startNr || !this.endNr) {
         this.error = "Wypełnij wszystkie pola!";
         return false;
@@ -222,7 +225,7 @@ label {
 }
 
 .pen-button:focus {
-    outline: 1px solid #7bad9a;
+  outline: 1px solid #7bad9a;
 }
 
 .pen-button img {
@@ -250,7 +253,7 @@ label {
   cursor: pointer;
 }
 
-.add-button:focus{
+.add-button:focus {
   outline: 1px solid #77bbaa;
   outline-offset: 10px;
 }
